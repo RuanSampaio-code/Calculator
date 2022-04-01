@@ -1,0 +1,16 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.botaonumber{
+    width: 100px;
+    background-color: gray;
+    margin: 10px;
+}
