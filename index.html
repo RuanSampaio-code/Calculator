@@ -6,49 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    lin
+    
 </head>
 <body>
     <main >
         <div>
-            <textarea name="   " id="" cols="30" rows="10"></textarea>
+            <textarea name="tela" id="resultado" cols="30" rows="10"></textarea>
         </div>
 
         <div class="line_">
             <button >
-                <div class="botaonumber" id="numero9" onclick="insert()">
+                <div class="botaonumber" id="numero9" onclick="insert('9')">
                     <h1> 9 </h1>
                 </div>
             </button>
             <button>
-                <div class="botaonumber" onclick="insert()">
+                <div class="botaonumber" onclick="insert('8')">
                     <h1> 8 </h1>
                 </div>
             </button>
             <button>
-                <div class="botaonumber" onclick="insert()">
+                <div class="botaonumber" onclick="insert('7')">
                     <h1> 7 </h1>
                 </div>
             </button>
             <button>
-                <div class="botaonumber" id="multi" onclick="insert()"> <h1> X </h1> </div>
+                <div class="botaonumber" id="multi" > <h1> X </h1> </div>
             </button>
             </div>
         <div class="line_">
                 <button>
-                    <div class="botaonumber">
+                    <div class="botaonumber"  onclick="insert('6')">
                         <h1> 6 </h1>
                     </div >
                 
                 </button>
                 <button>
-                    <div class="botaonumber">
+                    <div class="botaonumber"  onclick="insert('5')">
                         <h1> 5 </h1>
                     </div>
                 
                 </button>
                 <button>
-                    <div class="botaonumber">
+                    <div class="botaonumber"  onclick="insert('4')">
                         <h1> 4 </h1>
                     </div>
         
@@ -62,20 +62,20 @@
         
         <div  class="line_">
             <button>
-                <div class="botaonumber">
+                <div class="botaonumber"  onclick="insert('3')">
                     <h1> 3 </h1>
                 </div class="botaonumber">
             </button>
             
             <button>
                 <div>
-                    <h1 class="botaonumber"> 2 </h1>
+                    <h1 class="botaonumber"  onclick="insert('2')"> 2 </h1>
                 </div>
             
             </button>
             <button>
                 <div>
-                    <h1 class="botaonumber"> 1 </h1>
+                    <h1 class="botaonumber"  onclick="insert('1')"> 1 </h1>
                 </div>
             
             </button>
@@ -105,10 +105,9 @@
 
     </main>
     <script>
-        function insert(){
-            var valorelemeto = document.getElementById(numero9);
-            var valor = valorelemeto.value;
-            valor.innerHTML.;
+        function insert(num){
+            document.getElementById('resultado').innerHTML = num
+            
         }
     </script>
     

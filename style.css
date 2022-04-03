@@ -12,6 +12,19 @@ main{
     justify-content: space-between;
 }
 
+#resultado{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 70px;
+    width: 228px;
+    font-size: 25px;
+    text-align: right;
+    padding: 15px 10px 10px 5px;
+    
+    
+}
+
 .line_{
     margin: 2px;
 
