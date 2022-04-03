@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    lin
 </head>
 <body>
     <main >
@@ -15,22 +16,22 @@
 
         <div class="line_">
             <button >
-                <div class="botaonumber">
+                <div class="botaonumber" id="numero9" onclick="insert()">
                     <h1> 9 </h1>
                 </div>
             </button>
             <button>
-                <div class="botaonumber">
+                <div class="botaonumber" onclick="insert()">
                     <h1> 8 </h1>
                 </div>
             </button>
             <button>
-                <div class="botaonumber">
+                <div class="botaonumber onclick="insert()"">
                     <h1> 7 </h1>
                 </div>
             </button>
             <button>
-                <div class="botaonumber" id="multi"> <h1> X </h1> </div>
+                <div class="botaonumber" id="multi" onclick="insert()"> <h1> X </h1> </div>
             </button>
             </div>
         <div class="line_">
@@ -103,6 +104,13 @@
         </div>
 
     </main>
+    <script>
+        function insert(){
+            var valorelemeto = document.getElementById(numero9);
+            var valor = valorelemeto.value;
+            valor.innerHTML.
+        }
+    </script>
     
 </body>
 </html>
