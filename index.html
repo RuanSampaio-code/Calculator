@@ -13,6 +13,30 @@
         <div>
             <textarea name="tela" id="resultado" cols="30" rows="10"></textarea>
         </div>
+        <div  class="line_">
+            <button>
+                <div class="botaonumber" onclick="limpar()"> <h1> C </h1>
+                
+                </div>
+            </button>
+            <button>
+                <div class="botaonumber" > <h1> x² </h1>
+                
+                </div>
+            </button>
+            <button>
+                <div class="botaonumber" > <h1> √ </h1>
+                
+                </div>
+            </button>
+            <button>
+                <div class="botaonumber" > <h1> - </h1>
+                
+                </div>
+            </button>
+
+
+        </div>
 
         <div class="line_">
             <button >
@@ -31,7 +55,7 @@
                 </div>
             </button>
             <button>
-                <div class="botaonumber" id="multi" > <h1> X </h1> </div>
+                <div class="botaonumber" id="multi" onclick="insert('x')"> <h1> X </h1> </div>
             </button>
             </div>
         <div class="line_">
@@ -54,7 +78,7 @@
         
             </button>
             <button>
-                <div class="botaonumber" id="divisao"> <h1> / </h1> </div>
+                <div class="botaonumber" id="divisao" onclick="insert('/')"> <h1> / </h1> </div>
                 </button>
             </div>
 
@@ -68,19 +92,19 @@
             </button>
             
             <button>
-                <div>
-                    <h1 class="botaonumber"  onclick="insert('2')"> 2 </h1>
+                <div  class="botaonumber"  >
+                    <h1  onclick="insert('2')"> 2 </h1>
                 </div>
             
             </button>
             <button>
-                <div>
-                    <h1 class="botaonumber"  onclick="insert('1')"> 1 </h1>
+                <div class="botaonumber">
+                    <h1   onclick="insert('1')"> 1 </h1>
                 </div>
             
             </button>
             <button>
-                <div class="botaonumber" id="soma"> <h1> + </h1> 
+                <div class="botaonumber" id="soma" onclick="insert('+')"> <h1> + </h1> 
                 </div>
                 </button>
             
@@ -88,17 +112,22 @@
 
         <div  class="line_">
             <button>
-                
-                    <h1 class ="botaonumber"> 0 </h1>
+                 <div class ="botaonumber">
+                     <h1  onclick="insert('0')"> 0 </h1>
+                 </div>
             </button>
             <button>
-                <h1 class ="botaonumber">.</h1>
+                <div class ="botaonumber">
+                    <h1  onclick="insert('.')">.</h1>
+                </div>
             </button>
             <button>
-                <h1 class="botaonumber"> < </h1>
+                <div class ="botaonumber">
+                    <h1 onclick="apagar()"  > < </h1>
+                </div>
             </button>
             <button>
-                <div class="botaonumber"> <h1> = </h1> </div>
+                <div class="botaonumber"  onclick="insert('=')"> <h1> = </h1> </div>
                 </button>
             
         </div>
@@ -106,9 +135,21 @@
     </main>
     <script>
         function insert(num){
-            document.getElementById('resultado').innerHTML = num
-            
+            var numero = document.getElementById("resultado").innerHTML;
+            document.getElementById("resultado").innerHTML = numero + num; 
         }
+        
+        function limpar(){
+            var limpa = document.getElementById('resultado');
+            limpa.innerHTML = "";
+
+        }
+        function apagar(){
+            var resultado = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = resultado.substring(0,resultado.length -1)
+
+        }
+        
     </script>
     
 </body>
