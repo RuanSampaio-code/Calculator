@@ -18,8 +18,8 @@ main{
     text-align: center;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.514);
-    max-width: 220px;
-    height: 330px;
+    max-width: 250px;
+    height: 380px;
     border-radius: 10px;
    
 }
@@ -28,8 +28,9 @@ main{
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-bottom: 10px;
     max-height: 60px;
-    max-width: 180px;
+    max-width: 220px;
     font-size: 20px;
     text-align: right;
     padding: 15px 10px 0px 5px;
@@ -42,7 +43,7 @@ main{
 }
 
 .line_{
-    margin: 4px;
+    margin: 1px;
     
 }
 button{
@@ -50,18 +51,20 @@ button{
     background-color: rgba(30, 31, 32, 0.788);
     border: solid 2px gray;
     border-radius: 10%;
+    margin: 5px;
 }
 
 .botaonumber{
     font-size: 9px;
     display: flex;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     justify-content: center;
     flex-direction: column;
- 
     color: rgb(228, 232, 235);  
+    
+    
 
 }
 .botaonumber:hover{
