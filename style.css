@@ -7,16 +7,16 @@
 body{
    
     background-image:url(rm373batch13-086.jpg);
-    background-size: 700px;
+    background-size: 1920px;
 
 }   
 
 main{
     margin: auto;   
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 200px;
     background-color: rgba(0, 0, 0, 0.534);
     max-width: 300px;
     height: 420px;
