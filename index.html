@@ -27,7 +27,7 @@
                 </div>
             </button>
             <button>
-                <div class="botaonumber" > <h1> √ </h1>
+                <div class="botaonumber" onclick="raiz()" > <h1> √ </h1>
                 
                 </div>
             </button>
@@ -169,8 +169,14 @@
                 document.getElementById('resultado').innerHTML = eval(resultado);
             }
             else {
+                var alinhamentoCaixa = document.getElementById("resultado");
+                alinhamentoCaixa.style.textAlign = "center";
                 document.getElementById('resultado').innerHTML = 'INDEFINIDO';
             }
+        }
+        function raiz(){
+            var n = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = Math.sqrt(n);
         }
         
     </script>
