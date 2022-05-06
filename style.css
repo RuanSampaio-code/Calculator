@@ -20,7 +20,8 @@ main{
     background-color: rgba(0, 0, 0, 0.534);
     max-width: 300px;
     height: 426px;
-    border-radius: 10px;
+    border-radius: 10px; 
+    border: solid 0.7px rgba(194, 187, 173, 0.466);
    
 }
 
@@ -50,7 +51,7 @@ button{
     border: none;
     background-color: rgba(30, 31, 32, 0.788);
     border: solid 2px gray;
-    border-radius: 10%;
+    border-radius: 45%;
     margin: 5px;
 }
 
@@ -65,11 +66,13 @@ button{
     color: rgb(228, 232, 235);  
     
     
+    
 
 }
 .botaonumber:hover{
     background-color: rgb(9, 69, 119);
     cursor: pointer;
+    border-radius: 45%;
 }
 
 .test{
