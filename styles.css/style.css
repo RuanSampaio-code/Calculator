@@ -6,7 +6,7 @@
 
 body{
    
-    background-image:url(rm373batch13-086.jpg);
+    background-image:url("../assets/rm373batch13-086.jpg");
     background-size: 1920px;
 
 }   
@@ -65,8 +65,7 @@ button{
     flex-direction: column;
     color: rgb(228, 232, 235);  
     
-    
-    
+
 
 }
 .botaonumber:hover{

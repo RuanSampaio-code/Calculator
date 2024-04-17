@@ -27,23 +27,23 @@
 
     }
    
-    // abragendo funções de soma,subtração e div
+    // abragendo funções de soma,subtração e divisão
     function calcular (){
 
-        var resultado = document.getElementById("resultado").innerHTML;
+        let resultado = document.getElementById("resultado").innerHTML;
 
         if (resultado){
             document.getElementById('resultado').innerHTML = eval(resultado); //o eval realizada operaçoes matematicas de operadores dentro de string 
         }
         else {
-            var alinhamentoCaixa = document.getElementById("resultado");
+            let alinhamentoCaixa = document.getElementById("resultado");
             alinhamentoCaixa.style.textAlign = "center";
             document.getElementById('resultado').innerHTML = 'INDEFINIDO';
         }
     }
     
     function raiz(){
-        var n = document.getElementById('resultado').innerHTML;
+        let n = document.getElementById('resultado').innerHTML;
         document.getElementById('resultado').innerHTML = Math.sqrt(n);
     }
     
